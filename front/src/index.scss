@@ -2,8 +2,26 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: ProximaNova;
+  src: url(./fonts/ProximaNova/ProximaNova-Regular.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url(./fonts/ProximaNova/ProximaNova-Semibold.otf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url(./fonts/ProximaNova/ProximaNova-Bold.otf);
+  font-weight: 600;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: ProximaNova;
   margin: 0;
   padding: 0;
 }
