@@ -2,7 +2,7 @@
   "name": "semestre-i-react",
   "version": "1.0.0",
   "scripts": {
-    "install:front": "cd front && npm install",
-    "start:front": "cd front && npm start"
+    "install": "cd front && npm install",
+    "start": "cd front && npm start"
   }
 }
