@@ -61,6 +61,16 @@ body {
   width: 100%;
 }
 
+.comments-container {
+  text-align: right;
+}
+
+.posts-container {
+  padding: 30px;
+  text-align: center;
+  width: 100%
+}
+
 .step-item {
   align-items: center;
   cursor: pointer;
@@ -77,6 +87,7 @@ body {
 }
 
 .card-container {
+  text-align: left;
   border-radius: 3px;
   border: 1px solid #eee;
   box-shadow: 1px 1px 1px 0 #999;
