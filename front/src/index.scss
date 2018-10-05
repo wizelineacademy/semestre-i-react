@@ -1,3 +1,5 @@
+$red: #E93D44;
+
 * {
   box-sizing: border-box;
 }
@@ -59,9 +61,25 @@ body {
   width: 100%;
 }
 
+.step-item {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+
+  &:hover {
+    background: rgba(0, 0, 0, .05);
+  }
+
+  svg {
+    margin: 5px 5px 5px 0;
+    fill: $red;
+  }
+}
+
 .card-container {
+  border-radius: 3px;
   border: 1px solid #eee;
-  box-shadow: 1px 1px 1px 0 rgba(234, 233, 233, 0.5);
+  box-shadow: 1px 1px 1px 0 #999;
   margin: 10px auto;
   max-width: 800px;
   padding: 10px;
@@ -90,7 +108,7 @@ body {
 
 .custom-button {
   appearance: none;
-  background-color: #E93D44;
+  background-color: $red;
   border-radius: 3px;
   border: 0;
   color: white;
