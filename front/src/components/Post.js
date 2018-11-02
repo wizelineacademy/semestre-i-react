@@ -1,5 +1,6 @@
 import React, { Fragment, Component } from 'react'
 import Card from './Card'
+import { Link } from 'react-router-dom';
 import { getPostComments } from '../utils/webServices'
 
 class Post extends Component {
@@ -26,12 +27,14 @@ class Post extends Component {
                     <h3>{post.title}</h3>
                     <p>{post.body}</p>
                     <h5>by {post.user}</h5>
-                    <button
-                        className="custom-button"
-                        onClick={() => this.loadComments(post.id)}
-                    >
-                        Edit
-                    </button>
+                    <Link to="/editPost">
+                        <button
+                            className="custom-button"
+                            onClick={() => this.loadComments(post.id)}
+                        >
+                            Edit
+                        </button>
+                    </Link>
                     <button
                         className="custom-button right"
                         onClick={() => this.loadComments(post.id)}
