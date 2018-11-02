@@ -3,6 +3,7 @@ import TopBar from "./TopBar";
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom'
 import Posts from "./Posts";
 import PostCreateForm from "./PostCreateForm";
+import PostEditForm from './PostEditForm';
 
 class App extends React.Component {
   render() {
@@ -13,7 +14,7 @@ class App extends React.Component {
           <Switch>
             <Route path="/posts" component={() => <Posts />} />
             <Route path="/addPost" component={() => <PostCreateForm />} />
-            <Route path="/editPost" component={() => <PostCreateForm />} />
+            <Route path="/editPost" component={() => <PostEditForm />} />
             <Redirect to="posts"/>
           </Switch>
         </>
