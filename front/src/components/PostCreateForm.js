@@ -1,7 +1,7 @@
 import React, { Fragment, Component } from 'react';
 // import history from '../history';
 
-class PostForm extends Component {
+class PostCreateForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -16,21 +16,29 @@ class PostForm extends Component {
   }
 
   render() {
-    const { title } = this.props;
     return (
       <Fragment>
         <div className="posts-container">
           <form>
-            <h1>{title} Post</h1>
+            <h1> Create Post</h1>
             <div className='form-container'>
               <div>
-                <input type='text' placeholder='Author' />
+                <input
+                  type='text'
+                  placeholder='Author'
+                />
               </div>
               <div>
-                <input type='text' placeholder='Title' />
+                <input
+                  type='text'
+                  placeholder='Title'
+                />
               </div>
               <div>
-                <textarea type='text' placeholder='Write the content...' />
+                <textarea
+                  type='text'
+                  placeholder='Write the content...'
+                />
               </div>
             </div>
             <div>
@@ -48,4 +56,4 @@ class PostForm extends Component {
   }
 }
 
-export default PostForm;
+export default PostCreateForm;
