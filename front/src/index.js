@@ -1,6 +1,7 @@
 import React from 'react';
 import ApolloClient, { InMemoryCache } from 'apollo-boost';
 import { ApolloProvider as Provider } from 'react-apollo';
+import { BrowserRouter as Router } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './components/App';
@@ -23,7 +24,9 @@ const client = new ApolloClient({
 
 ReactDOM.render(
   <Provider client={client}>
-    <App />
+    <Router>
+      <App />
+    </Router>
   </Provider>,
   document.getElementById('root'),
 );

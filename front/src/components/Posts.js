@@ -11,11 +11,12 @@ const Posts = () => (
       }
       if (error) return `Error! ${error.message}`;
       return (
-        <Fragment>
+        <div className="posts-container">
+          <h1>Posts</h1>
           {data.posts.map((post, key) => (
             <Post post={post} key={key} />
           ))}
-        </Fragment>
+        </div>
       );
     }}
   </Query>

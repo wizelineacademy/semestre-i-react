@@ -11,6 +11,9 @@ class TopBar extends React.PureComponent {
         <Link to="/posts" className="link">
           POSTS
         </Link>
+        <Link to="/addPost" className="link">
+          ADD POST
+        </Link>
       </div>
     )
   }
