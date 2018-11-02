@@ -3,6 +3,7 @@ import { gql } from 'apollo-boost';
 const GET_POSTS = gql`
 {
 	posts {
+    _id
     title
     content
     author

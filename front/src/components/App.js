@@ -13,8 +13,8 @@ class App extends React.Component {
           <TopBar />
           <Switch>
             <Route path="/posts" component={() => <Posts />} />
-            <Route path="/addPost" component={() => <PostCreateForm />} />
-            <Route path="/editPost" component={() => <PostEditForm />} />
+            <Route path="/addPost" component={props => <PostCreateForm {...props} />} />
+            <Route path="/editPost/:id" component={props => <PostEditForm {...props} />} />
             <Redirect to="posts"/>
           </Switch>
         </>
