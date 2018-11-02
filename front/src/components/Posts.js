@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { GET_POSTS } from '../graphql/queries/posts'
 import { Query } from 'react-apollo';
 import Post from './Post';

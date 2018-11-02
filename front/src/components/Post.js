@@ -36,7 +36,7 @@ class Post extends Component {
                     </Link>
                     <button
                         className="custom-button right"
-                        onClick={() => this.loadComments(post.id)}ß
+                        onClick={() => this.loadComments(post.id)}
                     >
                         Comments
                     </button>
