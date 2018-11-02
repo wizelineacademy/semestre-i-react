@@ -1,7 +1,6 @@
 import React from 'react';
 import TopBar from "./TopBar";
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom'
-import About from "./About";
 import Posts from "./Posts";
 
 class App extends React.Component {
@@ -11,9 +10,8 @@ class App extends React.Component {
         <>
           <TopBar />
           <Switch>
-            <Route path="/about" component={About} />
             <Route path="/posts" component={Posts} />
-            <Redirect to="about"/>
+            <Redirect to="posts"/>
           </Switch>
         </>
       </BrowserRouter>

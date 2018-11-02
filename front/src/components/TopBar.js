@@ -8,9 +8,6 @@ class TopBar extends React.PureComponent {
         <a href="https://academy.wizeline.com/" target="_blank" rel="noopener noreferrer">
           <img src="https://wizeline-academy-assets-production.s3.amazonaws.com/wp-content/themes/wizeline-academy/dist/images/academy-logo.svg" alt="academy"/>
         </a>
-        <Link to="/about" className="link">
-          ABOUT
-        </Link>
         <Link to="/posts" className="link">
           POSTS
         </Link>
