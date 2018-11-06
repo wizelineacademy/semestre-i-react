@@ -10,5 +10,16 @@ const CREATE_POST = gql`
   }
 `;
 
-// eslint-disable-next-line
-export { CREATE_POST };
+const UPDATE_POST = gql`
+  mutation updatePost($_id: ID!, $author: String!, $title: String, $content: String) {
+    updatePost(_id: $_id, input: { author: $author, title: $title, content: $content }) {
+      _id
+      author
+      title
+      content
+    }
+  }
+`;
+
+export { CREATE_POST, UPDATE_POST };
+// export { UPDATE_POST };
