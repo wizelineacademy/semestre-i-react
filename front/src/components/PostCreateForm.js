@@ -69,7 +69,7 @@ class PostCreateForm extends Component {
                     type='submit'
                     className='custom-button'
                   >
-                      Submit
+                    Submit
                   </button>
                 </div>
               </form>
