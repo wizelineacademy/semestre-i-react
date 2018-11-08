@@ -1,8 +1,0 @@
-{
-  "name": "semestre-i-react",
-  "version": "1.0.0",
-  "scripts": {
-    "install": "cd front && npm install",
-    "start": "cd front && npm start"
-  }
-}
